@@ -133,7 +133,7 @@ elif section == "Contact":
     st.title("Contact Information")
 
     st.markdown("""
-    **Name:** Mr Mthokozisi Silwayiphi Mathonsi  
+    **Name:** Miss Mbalenhle Precide Shandu 
     **Institution:** University of Zululand  
     **Field:** Software engineering 
 
