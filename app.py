@@ -4,20 +4,11 @@ import streamlit as st
 # Page configuration
 # -----------------------------
 st.set_page_config(
-    page_title="Researcher Profile | Mthokozisi Mathonsi",
+    page_title="Researcher Profile | Mbalenhle Shandu",
     layout="wide"
 )
 
-# -----------------------------
-# Sidebar (Profile + Navigation)
-# -----------------------------
-try:
-    st.sidebar.image("profile.jpg", width=200)
-except:
-    st.sidebar.image(
-        "https://images.unsplash.com/photo-1531482615713-2afd69097998",
-        width=200
-    )
+
 
 st.sidebar.title("Miss Mbalenhle P Shandu")
 st.sidebar.write("Software engineering")
@@ -40,9 +31,6 @@ if section == "About Me":
     col3.metric("Focus Language", "isiZulu")
 
     st.markdown("""
-        I am a Data Science graduate from the **University of Zululand** with a strong interest
-        in **Natural Language Processing (NLP)** and **low-resource African languages**.
-        
         My academic journey began with a strong foundation in **software engineering**, where I
         developed several applications during my undergraduate studies. Through this experience,
         I gained practical skills in problem-solving, system development, and building real-world
@@ -52,15 +40,13 @@ if section == "About Me":
         focus on applying data-driven and NLP techniques to solve real-world problems in education
         and language technology.
         
-        At honours level, I conducted research on **Emotion Detection from isiZulu Text using NLP**,
-        and I intend to further extend this research at **Masters level**.
         """)
 
 
     st.markdown("""
     ### Research Interests
     - Natural Language Processing (NLP)
-    - Emotion Detection and Sentiment Analysis
+    - Sentiment Analysis
     - Low-resource African Languages
     - Multilingual Systems
     - Educational Technology
@@ -114,31 +100,30 @@ elif section == "Projects":
         - Designed specifically for first-year students
         """)
 
-    with st.expander("Digital Examination Seating Plan System"):
+    with st.expander("Unizulu gym booking system"):
         st.markdown("""
         **Description:**  
-        A digital examination seating plan system designed to improve the traditional
-        manual seating arrangement used at the University.
+        The gym booking system was developed to replace the manual booking system which was time consuming.
 
         **Impact:**
-        - Automated seat allocation
+        - AReduced paperwork
         - Reduced administrative errors
-        - Improved efficiency during examinations
+        - Improved efficiency of booking.
         """)
 
     with st.expander("Emotion Detection from isiZulu Text (Honours Research)"):
         st.markdown("""
         **Description:**  
-        An honours research project focused on detecting emotions from isiZulu text using
+        An honours research project focused on sentiment analysis from isiZulu text using
         Natural Language Processing techniques.
 
         **Focus Areas:**
         - Text preprocessing for isiZulu
-        - Emotion classification
+        - Sentiment analysis
         - Challenges in low-resource languages
 
         **Future Direction:**
-        - Extension of this research at Masters level
+        - Focusing on sentiment analysis on my Honours level
         """)
 
 # -----------------------------
@@ -150,10 +135,10 @@ elif section == "Contact":
     st.markdown("""
     **Name:** Mr Mthokozisi Silwayiphi Mathonsi  
     **Institution:** University of Zululand  
-    **Field:** Data Science / Natural Language Processing  
+    **Field:** Software engineering 
 
-    **Email:** your.email@example.com  
-    **Phone / WhatsApp:** 0825124649
+    **Email:**mbalenhleshandu2@gmail.com  
+    **Phone / WhatsApp:** 0634338613
     """)
 
     st.markdown("""
